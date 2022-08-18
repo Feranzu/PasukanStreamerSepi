@@ -169,7 +169,7 @@ require('http').createServer((req, res) => res.end(`
 
 client.on("ready", () => {
   //client.user.setStatus("Streaming"); // You can change it to online, dnd, idle
-  client.user.setActivity("with フェランツ | ::help", {type: 'Streaming'}) 
+  client.user.setActivity("with フェランツ | ::help", {type: 'WATCHING'})
 console.log(`Successfully logined as ${client.user.tag} `)
 });
 
