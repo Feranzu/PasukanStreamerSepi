@@ -169,15 +169,15 @@ require('http').createServer((req, res) => res.end(`
 
 client.on("ready", () => {
   //client.user.setStatus("idle"); // You can change it to online, dnd, idle
-  //client.user.setActivity("", {type: "STREAMING"})
-  client.user.setPresence({
-        status: "idle",
+  //client.user.setActivity("with フェランズ | ::help", {type: "STREAMING"})
+   client.user.setStatus('available')
+    client.user.setPresence({
         game: {
-            name: "with フェランズ | ::help",
-            type: "STREAMING"
+            name: 'with フェランズ | ::help',
+            type: "STREAMING",
+            url: "https://www.youtube.com/channel/UCsPvLgKFQc7Tr4EKmNqyU3Q"
         }
     });
-  .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
 console.log(`Successfully logined as ${client.user.tag} `)
 });
 
