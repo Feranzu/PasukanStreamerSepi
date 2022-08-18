@@ -168,8 +168,12 @@ require('http').createServer((req, res) => res.end(`
 `)).listen(3000) //Dont remove this 
 
 client.on("ready", () => {
-  client.user.setStatus("idle"); // You can change it to online, dnd, idle
-  client.user.setActivity("with フェランズ | ::help", {type: "STREAMING"})
+//   client.user.setStatus("idle"); // You can change it to online, dnd, idle
+//   client.user.setActivity("with フェランズ | ::help", {type: "WATCHING"})
+  client.user.setActivity("with フェランズ | ::help", {
+  type: "STREAMING",
+  url: "https://www.youtube.com/channel/UCsPvLgKFQc7Tr4EKmNqyU3Q"
+});
   
 console.log(`Successfully logined as ${client.user.tag} `)
 });
