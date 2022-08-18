@@ -1,7 +1,7 @@
 { 
-"bprefix": "\\", 
+"bprefix": "::", 
 
-"prefix": "\\",
+"prefix": "::",
 
 "developerID": "399089148960440350",
 
