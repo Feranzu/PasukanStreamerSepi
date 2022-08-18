@@ -168,8 +168,15 @@ require('http').createServer((req, res) => res.end(`
 `)).listen(3000) //Dont remove this 
 
 client.on("ready", () => {
-  client.user.setStatus("idle"); // You can change it to online, dnd, idle
-  client.user.setActivity("with フェランズ | ::help", {type: "STREAMING"})
+  //client.user.setStatus("idle"); // You can change it to online, dnd, idle
+  //client.user.setActivity("", {type: "STREAMING"})
+  client.user.setPresence({
+        status: "idle",
+        game: {
+            name: "with フェランズ | ::help",
+            type: "STREAMING"
+        }
+    });
   .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
 console.log(`Successfully logined as ${client.user.tag} `)
 });
