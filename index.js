@@ -168,7 +168,7 @@ require('http').createServer((req, res) => res.end(`
 `)).listen(3000) //Dont remove this 
 
 client.on("ready", () => {
-  //client.user.setStatus("Streaming"); // You can change it to online, dnd, idle
+  client.user.setStatus("idle"); // You can change it to online, dnd, idle
   client.user.setActivity("with フェランツ | ::help", {type: 'STREAMING'})
 console.log(`Successfully logined as ${client.user.tag} `)
 });
