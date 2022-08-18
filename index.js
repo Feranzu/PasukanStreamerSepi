@@ -172,7 +172,7 @@ client.on("ready", () => {
 //   client.user.setActivity("with フェランズ | ::help", {type: "WATCHING"})
   client.user.setActivity("with フェランズ | ::help", {
   type: "STREAMING",
-  url: "https://www.youtube.com/channel/UCsPvLgKFQc7Tr4EKmNqyU3Q"
+  url: "www.youtube.com/channel/UCsPvLgKFQc7Tr4EKmNqyU3Q"
 });
   
 console.log(`Successfully logined as ${client.user.tag} `)
