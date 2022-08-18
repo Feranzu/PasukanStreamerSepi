@@ -1,4 +1,4 @@
-const { bprefix, developerID } = require("./config.json")
+const {TOKEN, bprefix, developerID } = require("./config.json")
 const math = require("mathjs")
 const { config } = require("dotenv");
 const fetch = require("node-fetch");
