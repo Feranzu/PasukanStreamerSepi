@@ -168,9 +168,9 @@ require('http').createServer((req, res) => res.end(`
 `)).listen(3000) //Dont remove this 
 
  client.on("ready", () => {
-// //   client.user.setStatus("idle"); // You can change it to online, dnd, idle
+//   client.user.setStatus("idle"); // You can change it to online, dnd, idle
      client.user.setActivity("with フェランズ | ::help", {type: "WATCHING"})
-//      console.log(`Successfully logined as ${client.user.tag} `)
+     console.log(`Successfully logined as ${client.user.tag} `)
  });
 
 
