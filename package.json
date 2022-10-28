@@ -2,9 +2,9 @@
   "name": "Music-Bot",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "Thanks for using"
-    "start": "node index.js"
   },
   "keywords": [],
   "author": "Supreme#2401",
@@ -47,9 +47,5 @@
     "ytdl-core-discord": "^1.3.1",
     "ytpl": "^2.0.4",
     "ytsr": "^3.2.2"
-  },
-   "engines": {
-     "node": "0.10.x",
-     "npm": "1.3.x"
-   }
+  }
 }
