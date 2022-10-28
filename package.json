@@ -2,9 +2,9 @@
   "name": "Music-Bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "Thanks for using"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Supreme#2401",
